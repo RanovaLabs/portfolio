@@ -300,14 +300,18 @@
 
       <article class="entry small">
         <div class="side">
-          <span class="chip exp">Personal experiment</span>
-          <span class="when">Sep 2026</span>
+          <span class="chip">In review on Google Play</span>
+          <span class="when">Oct 2026 &middot; v1.0</span>
         </div>
         <div>
-          <h3>AirPlay TV</h3>
-          <p>An Android TV app that turns the TV into an AirPlay receiver for iPhone, iPad and Mac. It mirrors the screen with hardware H.264 decoding, plays music-only AirPlay, and casts video through ExoPlayer. Android has no ALAC decoder, so I wrote one in pure Java and tested it bit-exact against Apple's encoder.</p>
-          <p>It builds on the open-source <a href="https://github.com/serezhka/java-airplay">java-airplay</a> library, and its licence ships with the project.</p>
-          <div class="tags"><span>Java</span><span>Android TV</span><span>Media3</span><span>mDNS</span></div>
+          <h3>Mirrora: Screen Mirror for TV</h3>
+          <p>An Android TV app that turns the TV into a screen-mirroring receiver for iPhone, iPad and Mac. It decodes the FairPlay-encrypted H.264 mirror stream in hardware and keeps the frames since the last keyframe, so the picture recovers instantly when the player reopens. Android has no ALAC decoder, so I wrote one in pure Java and tested it bit-exact against Apple's encoder.</p>
+          <p>It runs as a background service that starts with the TV, and falls back to its own mDNS responder on TVs whose system one never answers. Free and open source under the GPL, building on <a href="https://github.com/serezhka/java-airplay">java-airplay</a>.</p>
+          <div class="tags"><span>Java</span><span>Android TV</span><span>MediaCodec</span><span>Netty</span><span>mDNS</span><span>GPLv3</span></div>
+          <div class="links">
+            <a href="https://ranovalabs.github.io/mirrora/">Website</a>
+            <a href="https://github.com/RanovaLabs/mirrora">Source code</a>
+          </div>
         </div>
       </article>
     </section>
@@ -369,7 +373,7 @@
       <div class="twocol">
         <div>
           <h3>Work</h3>
-          <div class="role"><strong>Ranova Labs Ltd</strong><span class="mono">Founder and iOS Developer &middot; Sep 2026 – present</span><p>My own app studio. Tally and Chalkline are live on the App Store, Afterwards is in progress, and Tally for Android is in review on Google Play. I handle everything from architecture to App Review, using AI-assisted development with Claude Code.</p></div>
+          <div class="role"><strong>Ranova Labs Ltd</strong><span class="mono">Founder and iOS Developer &middot; Sep 2026 – present</span><p>My own app studio. Tally and Chalkline are live on the App Store, Afterwards is in progress, and Tally for Android and Mirrora are in review on Google Play. I handle everything from architecture to App Review, using AI-assisted development with Claude Code.</p></div>
           <div class="role"><strong>MarvelStacks</strong><span class="mono">iOS Developer, later Lead iOS Developer (part-time) &middot; Jul 2023 – present</span><p>Develop and ship iOS features end to end in Swift and SwiftUI, build prototypes during technical scoping, and integrate REST APIs.</p></div>
           <div class="role"><strong>EPIC Lanka</strong><span class="mono">Associate Technical Lead &middot; Jan 2020 – Sep 2022</span><p>Led a team of mobile developers delivering wallet and banking apps across iOS, Android, Flutter and React Native. Resolved compliance issues and security vulnerabilities, ran technical hiring and mentoring, and contributed to tender submissions.</p></div>
           <div class="role"><strong>EPIC Lanka</strong><span class="mono">Software Engineer, later Senior Software Engineer &middot; Dec 2015 – Dec 2019</span><p>Designed and built native iOS and Android apps for core banking and mobile wallet products.</p></div>
